@@ -1,6 +1,8 @@
 const sentenceTag = document.querySelector(`input[type="text"]`)
 const typesizeTag = document.querySelector(`input[name="typesize"]`)
 const typesizeOutput = document.querySelector('span.typesize-output')
+const lineheightTag = document.querySelector(`input[name="lineheight"]`)
+const lineheightOutput = document.querySelector('span.lineheight-output')
 const outputTag = document.querySelector("textarea.output")
 const originalText = outputTag.value
 
@@ -31,4 +33,9 @@ outputTag.addEventListener('keyup', function(){
 typesizeTag.addEventListener('input', function(){
   outputTag.style.fontSize = this.value + "px"
   typesizeOutput.innerHTML = this.value + "px"
+})
+
+lineheightTag.addEventListener('input', function(){
+  outputTag.style.lineHeight = this.value
+  lineheightOutput.innerHTML = this.value
 })
