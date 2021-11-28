@@ -24,7 +24,7 @@ h1 {
 }
 
 div.option {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 label {
@@ -39,6 +39,15 @@ input[type="text"]{
   color: #fff;
   outline: none;
   padding: 5px 7px;
+}
+
+label span {
+  float: right;
+  font-style: italic;
+}
+
+input[type="range"] {
+  width: 100%;
 }
 
 textarea.output {
