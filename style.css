@@ -27,6 +27,12 @@ div.option {
   margin-top: 20px;
 }
 
+div.option-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 label {
   display: block;
   margin-bottom: 5px;
@@ -49,6 +55,8 @@ label span {
 input[type="range"] {
   width: 100%;
 }
+
+
 
 textarea.output {
   font-size: 64px;
