@@ -4,7 +4,7 @@ body {
   line-height: 1.5;
   color: #fff;
   background-color: #2a2a2a;
-  margin: 40px 40px 40px 320px;
+  margin: 0 0 0 280px;
 }
 
 section.options {
@@ -24,7 +24,13 @@ h1 {
 }
 
 div.option {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+div.option-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 label {
@@ -41,6 +47,55 @@ input[type="text"]{
   padding: 5px 7px;
 }
 
+select {
+  width: 100%;
+  padding: 5px 7px;
+}
+
+label span {
+  float: right;
+  font-style: italic;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance:none;
+  height: 16px;
+  width: 16px;
+  background-color: #575757;
+  border-radius: 50%;
+  transition: background-color 0.25s;
+}
+
+input[type="checkbox"]:checked {
+  -webkit-appearance:none;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+}
+
+div.colors {
+  display: flex;
+}
+
+div.colors div {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  text-align: center;
+  margin: 5px 10px;
+  transition: border 0.25s;
+}
+
+div.colors div.selected {
+  border: 2px solid #fff;
+}
+
+
 textarea.output {
   font-size: 64px;
   width: 100%;
@@ -49,4 +104,5 @@ textarea.output {
   color: #fff;
   border: none;
   outline: none;
+  padding: 40px;
 }
